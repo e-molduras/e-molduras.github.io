@@ -1,0 +1,3 @@
+ol.checklist { list-style-type: lower-alpha; }
+ol.checklist li:before { content: "\2610\0020"; }
+ol.checklist li.checked:before { content: "\2611\0020"; }
