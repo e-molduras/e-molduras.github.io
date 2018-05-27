@@ -3,6 +3,10 @@ body {
 	margin: 0;
 	padding: 60px 0 0;
 }
+img#banner {
+    width:650px;
+    height:338px;
+}
 @media (min-width: 900px) {
 	body {
 		padding: 0 0 0 250px;
@@ -67,6 +71,36 @@ ul.menu > li:last-child { margin-right: 10px; }
 		ul.menu > li:last-child { margin-bottom: 70px; }
 		ul.menu > li:nth-child(3) { margin-bottom: 40px; }
 	}
+}
+footer {
+    background-color: #fff; /* requisito item n) */
+    border: 1px solid #ccc;
+    border-radius: .2em;
+    margin: 5px;
+    padding: 5px;
+}
+footer > ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+footer > ul > li { display: inline-block; }
+footer > h5 {
+    font-size: small;   /* requisito item n) */
+    font-weight: bold;  /* requisito item n) */
+    margin: 5px;
+    text-align: center; /* requisito item n) */
+}
+footer > p {
+    font-size: small;
+    margin: 5px;
+    text-align: center;
+}
+section.corpo { /* requisito item m) - justificado, com margem e cor preta */
+    color: black;
+    margin: 15px;
+    text-align: justify;
 }
 
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
