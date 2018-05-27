@@ -55,14 +55,11 @@ ul.menu > li:last-child { margin-right: 10px; }
 		font-size: larger;
 		margin-left: 0;
 		margin-top: 10px;
-	}
-	ul.menu > li:nth-child(2) {
-		display: block;
+		text-align: center;
 	}
 	ul.menu > li:nth-child(3) {
 		display: block;
 		margin-bottom: 20px;
-		text-align: center;
 		font-size: small;
 	}
 	ul.menu > li:nth-child(4) { margin-left: 0; }
