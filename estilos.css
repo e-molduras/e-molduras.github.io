@@ -96,6 +96,11 @@ footer > p {
     margin: 5px;
     text-align: center;
 }
+section.corpo { /* requisito item m) - justificado, com margem e cor preta */
+    color: black;
+    margin: 15px;
+    text-align: justify;
+}
 
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
 textarea {
