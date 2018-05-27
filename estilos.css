@@ -100,11 +100,11 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
 }
 header {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* requisito item o) */
     padding: 10px;
 }
 header > a > img {
-    border: 1px solid black;
+    border: 1px solid black; /* requisito item o) */
     max-width: 100%;
 }
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
