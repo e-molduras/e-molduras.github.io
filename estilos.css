@@ -7,6 +7,7 @@ img#banner {
     width:650px;
     height:338px;
 }
+
 @media (min-width: 900px) {
 	body {
 		padding: 0 0 0 250px;
