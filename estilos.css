@@ -3,7 +3,8 @@ body {
 	margin: 0;
 	padding: 60px 0 0;
 }
-img {width:650px;
+img#banner {
+    width:650px;
     height:338px;
 }
 @media (min-width: 900px) {
