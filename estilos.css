@@ -68,3 +68,18 @@ ul.menu > li:last-child { margin-right: 10px; }
 		ul.menu > li:nth-child(3) { margin-bottom: 40px; }
 	}
 }
+
+        /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
+textarea {
+    box-shadow: 3px 2px 8px 1px;
+    border-color: #666;
+    height: 150px;
+    width: 500px;
+}
+input {
+    border-style: solid;
+    border-color: #666;
+}
+button {
+    width: auto;
+}
