@@ -102,7 +102,15 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
     margin: 15px;
     text-align: justify;
 }
-
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+header > a > img {
+    border: 1px solid black;
+    max-width: 100%;
+}
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
 textarea {
     box-shadow: 3px 2px 8px 1px;
