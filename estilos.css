@@ -68,6 +68,34 @@ ul.menu > li:last-child { margin-right: 10px; }
 		ul.menu > li:nth-child(3) { margin-bottom: 40px; }
 	}
 }
+
+/*CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+h3 {
+    text-align: left;
+    content:">";
+}
+#titulo-painel {
+    text-align: center;
+    background: rgba(60,60,60,.5);
+    padding: 10px;
+}
+.painel_molduras {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #666;
+}
+.painel_molduras li {
+    display: inline-block;
+}
+.painel_molduras img:hover {
+    transform: scale(1.5);
+    transition: .7s;
+}
+.painel_molduras a {
+    text-decoration: none;
+}
+/*FIM DA CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+
 footer {
     background-color: #fff; /* requisito item n) */
     border: 1px solid black;
