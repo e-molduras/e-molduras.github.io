@@ -70,11 +70,19 @@ ul.menu > li:last-child { margin-right: 10px; }
 }
 
 /*CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+h3 {
+    text-align: left;
+    content:">";
+}
+#titulo-painel {
+    text-align: center;
+    background: rgba(60,60,60,.5);
+    padding: 10px;
+}
 .painel_molduras {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 6px #666;
-    padding: 10px;
 }
 .painel_molduras li {
     display: inline-block;
