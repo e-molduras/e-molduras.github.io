@@ -100,7 +100,7 @@ footer {
     background-color: #fff; /* requisito item n) */
     border: 1px solid black;
     border-radius: .2em;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
 }
 footer > ul {
