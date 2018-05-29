@@ -28,15 +28,20 @@
     </header>
     <section class="corpo">
         <h1> Preencha os campos abaixo e envie-nos sua mensagem</h1>
-        <form method="post" id="pedido" action="mailto:lucianotecinfo2017@gmail.com">
+        <form method="post" id="contato" action="https://formspree.io/grupoemolduras@yahoo.com">
+            <input type="hidden" name="_language" value="pt-BR">
+            <input type="hidden" name="_subject" value="Contato: E-Molduras">
             <fieldset id="usuario"><legend>Identificação do cliente</legend>
-                <p><label for="idnome">Nome: </label><input type="password" name="nome" id="idnome" placeholder="Nome Completo"></p>
+                <p><label for="idnome">Nome: </label><input type="text" name="nome" id="idnome" placeholder="Nome Completo"></p>
                 <p><label for="idfone">Fone: &nbsp;&nbsp;</label><input type="tel" name="fone" id="idfone" placeholder="Fone aqui..."></p>
                 <p><label for="idemail">E-mail:</label><input type="email" name="email" id="idemail" placeholder="E-mail aqui..." size="20"></p>
             </fieldset>
+            <fieldset><legend>Mensagem</legend>
+                <textarea name="mensagem" placeholder="Deixe aqui sua mensagem..."></textarea>
+            </fieldset>
+           <button type="submit">Enviar</button>
+           <button type="reset">Limpar</button>
         </form>
-        <h4>Mensagem</h4>
-        <textarea placeholder="Deixe aqui sua mensagem..."></textarea>
     </section>
     <footer>
         <ul>

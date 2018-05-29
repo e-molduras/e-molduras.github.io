@@ -136,6 +136,7 @@ header > a > img {
     border-radius: .2em;
     max-width: 100%;
 }
+fieldset { min-width: 0; }
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
 textarea {
     box-shadow: 3px 2px 8px 1px;
