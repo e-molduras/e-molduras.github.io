@@ -1,6 +1,7 @@
 body {
 	background-color: #fccece;
     background-image: url('imagens/background.png');
+    /*background: linear-gradient(red,yellow, #6699,#555)*/
 	margin: 0;
 	padding: 60px 0 0;
 }
