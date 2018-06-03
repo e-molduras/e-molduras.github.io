@@ -1,5 +1,5 @@
 body {
-	background-color: #fccece;
+	background-color: #f8f5f0;
     background-image: url('imagens/background.png');
     /*background: linear-gradient(red,yellow, #6699,#555)*/
 	margin: 0;
@@ -124,7 +124,7 @@ footer > p {
     text-align: center;
 }
 section.corpo { /* requisito item m) - justificado, com margem e cor preta */
-    background-color: #fccece;
+    background-color: #f8f5f0;
     border: 1px solid black;
     border-radius: .2em;
     color: black;
