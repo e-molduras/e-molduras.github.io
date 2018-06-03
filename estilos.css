@@ -181,3 +181,7 @@ button#limpar {
     width: 100px;
     border-color: #666;
 }
+button#limpar2,
+button#enviar {
+    background: #7F7F7F;
+}
