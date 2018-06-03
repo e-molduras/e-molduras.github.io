@@ -1,7 +1,6 @@
 body {
 	background-color: #f8f5f0;
     background-image: url('imagens/background.png');
-    /*background: linear-gradient(red,yellow, #6699,#555)*/
 	margin: 0;
 	padding: 60px 0 0;
 }
@@ -102,6 +101,7 @@ footer {
     background-color: #fff; /* requisito item n) */
     border: 1px solid black;
     border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
     margin: 15px;
     padding: 5px;
 }
@@ -127,6 +127,7 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
     background-color: #f8f5f0;
     border: 1px solid black;
     border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
     color: black;
     margin: 15px;
     padding: 15px;
@@ -140,6 +141,7 @@ header {
 header > a > img {
     border: 1px solid black; /* requisito item o) */
     border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
     max-width: calc(100% - 2px);
 }
 fieldset { min-width: 0; }
