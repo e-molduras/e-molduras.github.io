@@ -190,3 +190,7 @@ button#enviar {
     font-weight: 700;
     padding: 5px 5px 5px 5px;
 }
+/*tabela contatos*/
+table, th, td {
+    border: 1px solid black;
+}
