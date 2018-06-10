@@ -280,6 +280,7 @@ button.right {
 input, textarea {
     border: 1px solid #ddd;
     border-radius: .2em;
+    background-color: #fff;
 }
 input:focus, textarea:focus {
     border: 1px solid #0074d9;
@@ -301,23 +302,26 @@ input:focus, textarea:focus {
     left: 0;
     height: 20px;
     width: 20px;
-    background: #ddd;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 .control-radio div {
     border-radius: 50%;
 }
-.control:hover input ~ div,
-.control input:focus ~ div {
+.control:hover input ~ div {
     background: #aaa;
 }
 .control input:checked ~ div {
     background: #0074d9;
+    border: 1px solid #0074d9;
 }
 .control:hover input:not([disabled]):checked ~ div {
     background: #001f3f;
+    border: 1px solid #001f3f;
 }
 .control input:disabled ~ div {
     background: #eee;
+    border: 1px solid #ddd;
     opacity: 0.6;
     pointer-events: none;
 }
