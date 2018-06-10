@@ -1,4 +1,5 @@
 body {
+    background-attachment: fixed;
 	background-color: #f8f5f0;
     background-image: url('imagens/background.png');
 	margin: 0;
