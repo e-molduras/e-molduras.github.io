@@ -178,7 +178,7 @@ header > a > img {
     border-radius: .2em;
     box-shadow: 2px 2px 6px black;
     display: block;
-    margin: auto;
+    margin: auto; /* requisito item o) */
     max-width: calc(100% - 2px);
 }
 fieldset { min-width: 0; }

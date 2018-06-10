@@ -72,14 +72,20 @@ ul.menu > li:last-child { margin-right: 10px; }
 }
 
 /*CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+p#paragrafo1 {
+    font-size: 14pt;
+    padding-bottom: 20px;
+}
+p#paragrafo2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 14pt;
+    background: rgba(60,60,60,.5);
+    padding: 10px;
+}
 h3 {
     text-align: left;
     content:">";
-}
-#titulo-painel {
-    text-align: center;
-    background: rgba(60,60,60,.5);
-    padding: 10px;
 }
 .painel_molduras {
     background-color: #fff;
@@ -176,30 +182,28 @@ input {
     font-weight: 900;
     font-size: 15px;
 }
-button#comprar {
-    margin-left: 200px;
-    margin-top: 30px;
-    border-radius: 40px;
-    height: 35px;
-    width: 100px;
-    border-color: #666;
-}
-button#limpar {
-    margin-left: 40px;
-    margin-top: 30px;
-    border-radius: 40px;
-    height: 35px;
-    width: 100px;
-    border-color: #666;
-}
+
+button#comprar,
+button#limpar,
 button#limpar2,
 button#enviar {
-    border-color: #000;
+    border-color: #666;
     background: #7F7F7F;
-    border-radius: 5px;
+    border-radius: 40px;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 5px 5px 5px 5px;
+    width: 100px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+button#limpar2 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+button#enviar {
+    margin-left: 30px;
+    margin-top: 20px;
 }
 /*tabela contatos*/
 table {
