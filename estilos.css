@@ -222,7 +222,11 @@ table, th, td {
  /*CONFIGURAÇÃO imagens*/
 img {
     border: 2px solid black;
+<<<<<<< HEAD
 }
 figure.fotos {
     text-align: center;
+=======
+    box-shadow: 3px 3px 5px #555;
+>>>>>>> origin/master
 }
