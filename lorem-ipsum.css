@@ -1,6 +1,6 @@
 body {
     background-attachment: fixed;
-	background-color: #f8f5f0;
+	background-color: #fffceb;
     background-image: url('imagens/background.png');
 	margin: 0;
 	padding: 60px 0 0;
@@ -125,7 +125,7 @@ footer > p {
     text-align: center;
 }
 section.corpo { /* requisito item m) - justificado, com margem e cor preta */
-    background-color: #f8f5f0;
+    background-color: #fffceb;
     border: 1px solid black;
     border-radius: .2em;
     box-shadow: 2px 2px 6px black;
