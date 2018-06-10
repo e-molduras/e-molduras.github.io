@@ -11,8 +11,6 @@ body {
 		padding: 0 0 0 250px;
 	}
 }
-<<<<<<< HEAD
-=======
 h1 { font-size: 2.25rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
@@ -29,13 +27,12 @@ h6 { font-size: .75rem; }
 }
 h1, h2, h3, h4, h5, h6 { margin: .5em 0; }
 a:link {
-    color: #00749d;
+    color: #0074d9;
     font-weight: bold;
     text-decoration: none;
 }
 a:visited { color: #001f3f; }
 a:active, a:hover { text-decoration: underline; }
->>>>>>> origin/master
 ol.checklist { list-style-type: lower-alpha; }
 ol.checklist li:before { content: "\2610\0020"; color: red; }
 ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
@@ -162,10 +159,7 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
 }
 @media (min-width: 1280px) {
     section.corpo {
-<<<<<<< HEAD
-=======
         font-size: 120%;
->>>>>>> origin/master
         margin-left: auto;
         margin-right: auto;
         width: 968px; /* -250-30-30-2 (menu, margin, padding, border) */
@@ -175,10 +169,7 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
         margin-right: auto;
         width: 988px; /* -250-30-10-2 (menu, margin, padding, border) */
     }
-<<<<<<< HEAD
-=======
     button { font-size: 90%; }
->>>>>>> origin/master
 }
 header { padding: 15px; }
 header > a > img {
@@ -240,15 +231,29 @@ button#enviar {
 */
 /*tabela contatos*/
 table {
+    border-collapse: collapse;
+    border-spacing: 0;
     margin: 15px auto;
+    max-width: calc(100% - 30px);
 }
-table, th, td {
-    border: 1px solid black;
+th {
+    color: #fff;
+    background-color: #0074d9;
 }
+tr:nth-child(odd) { background: #fff; }
+tr:nth-child(even) { background-color: #ddd; }
+td,th { padding: 10px; }
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
 .item-m { font-weight: bold; }
+fieldset { border: none; }
+legend {
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    width: calc(100% - 4px);
+}
 label.left {
+    font-weight: bold;
     float: left;
     height: 20px;
     margin: 5px 0;
@@ -273,7 +278,7 @@ button.right {
     margin: 5px;
 }
 input, textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: .2em;
 }
 input:focus, textarea:focus {
