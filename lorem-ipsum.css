@@ -11,6 +11,31 @@ body {
 		padding: 0 0 0 250px;
 	}
 }
+<<<<<<< HEAD
+=======
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: .875rem; }
+h6 { font-size: .75rem; }
+@media (min-width: 1280px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: .875rem; }
+}
+h1, h2, h3, h4, h5, h6 { margin: .5em 0; }
+a:link {
+    color: #00749d;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited { color: #001f3f; }
+a:active, a:hover { text-decoration: underline; }
+>>>>>>> origin/master
 ol.checklist { list-style-type: lower-alpha; }
 ol.checklist li:before { content: "\2610\0020"; color: red; }
 ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
@@ -137,6 +162,10 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
 }
 @media (min-width: 1280px) {
     section.corpo {
+<<<<<<< HEAD
+=======
+        font-size: 120%;
+>>>>>>> origin/master
         margin-left: auto;
         margin-right: auto;
         width: 968px; /* -250-30-30-2 (menu, margin, padding, border) */
@@ -146,6 +175,10 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
         margin-right: auto;
         width: 988px; /* -250-30-10-2 (menu, margin, padding, border) */
     }
+<<<<<<< HEAD
+=======
+    button { font-size: 90%; }
+>>>>>>> origin/master
 }
 header { padding: 15px; }
 header > a > img {
