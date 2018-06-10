@@ -206,7 +206,7 @@ table {
     margin: 15px auto;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
