@@ -15,8 +15,8 @@ ol.checklist li:before { content: "\2610\0020"; color: red; }
 ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
 ul.menu {
 	align-items: center;
-	background-color: #555;
-	box-shadow: 3px 3px 5px #555;
+	background-color: #001f3f;
+	box-shadow: 3px 3px 5px #001f3f;
 	display: flex;
 	height: 50px;
 	list-style-type: none;
