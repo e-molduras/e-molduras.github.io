@@ -27,7 +27,45 @@
         <a href="principal.html"><img alt="Banner" src="imagens/banner.png"></a>
     </header>
     <section class="corpo">
-        <h1> Preencha os campos abaixo e envie-nos sua mensagem</h1>
+        <h1>Contato</h1>
+        <!-- requisito item e) - item sublinhado (palavra contato) -->
+        <p>Você pode entrar em <span class="item-e">contato</span> com nossa
+        empresa através de um dos telefones abaixo:</p>
+        <table>
+            <thead>
+                <tr>
+                    <!-- requisito item k) - item centralizado -->
+                    <th colspan="2" class="center">Contatos</th>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luciano</td>
+                    <td>(65) 91111-1111</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Erivelton</td>
+                    <td>(65) 92222-2222</td>
+                </tr>
+                <tr>
+                    <td>(65) 93333-3333</td></tr>
+                <tr>
+                    <td>Tatiane</td>
+                    <td>(65) 94444-4444</td>
+                </tr>
+                <tr>
+                    <td>Breno</td>
+                    <td>(65) 95555-5555</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- requisito item e) - item sublinhado (palavra contato) -->
+        <p>Se preferir entrar em <span class="item-e">contato</span> por
+        e-mail, preencha os campos abaixo e envie-nos sua mensagem:</p>
         <form method="post" id="contato" action="https://formspree.io/grupoemolduras@yahoo.com">
             <input type="hidden" name="_language" value="pt-BR">
             <input type="hidden" name="_subject" value="Contato: E-Molduras">
@@ -35,6 +73,21 @@
                 <p><label for="idnome">Nome: </label><input type="text" name="nome" id="idnome" placeholder="Nome Completo"></p>
                 <p><label for="idfone">Fone: &nbsp;&nbsp;</label><input type="tel" name="fone" id="idfone" placeholder="Fone aqui..."></p>
                 <p><label for="idemail">E-mail:</label><input type="email" name="email" id="idemail" placeholder="E-mail aqui..." size="20"></p>
+                <p><label name="sexo">Sexo:</label>
+                  <select name="sexo">
+                        <option>masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiro não informar</option>
+                    </select> <br/>
+                    <p><label name="cliente">Cliente:</label><br>
+                         <label for="nãocliente">Não </label>
+                          <input type="radio" name="gender" id="cliente" value="male"><br>
+                          <label for="cliente">Sim</label>
+                          <input type="radio" name="gender" id="cliente" value="cliente"><br>
+                         <P>Selecione horário de entrega:<BR>
+                             <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+                            <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 18h<BR>
+
             </fieldset>
             <fieldset><legend>Mensagem</legend>
                 <textarea name="mensagem" placeholder="Deixe aqui sua mensagem..."></textarea>
@@ -43,8 +96,7 @@
             <button id="enviar" type="submit" >Enviar</button>
            <button id="limpar2" type="reset">Limpar</button>
           </div>
-        </form>
-    </section>
+
     <footer>
         <ul>
             <li>[ <a href="https://www.facebook.com/E-Molduras-134330300770298" target="_blank">Facebook</a> |</li>

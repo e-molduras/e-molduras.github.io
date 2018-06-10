@@ -1,7 +1,8 @@
 body {
     background-attachment: fixed;
-	background-color: #f8f5f0;
+	background-color: #fffceb;
     background-image: url('imagens/background.png');
+    font-family: sans-serif;
 	margin: 0;
 	padding: 60px 0 0;
 }
@@ -10,13 +11,35 @@ body {
 		padding: 0 0 0 250px;
 	}
 }
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: .875rem; }
+h6 { font-size: .75rem; }
+@media (min-width: 1280px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1rem; }
+    h6 { font-size: .875rem; }
+}
+h1, h2, h3, h4, h5, h6 { margin: .5em 0; }
+a:link {
+    color: #0074d9;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited { color: #001f3f; }
+a:active, a:hover { text-decoration: underline; }
 ol.checklist { list-style-type: lower-alpha; }
 ol.checklist li:before { content: "\2610\0020"; color: red; }
 ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
 ul.menu {
 	align-items: center;
-	background-color: #555;
-	box-shadow: 3px 3px 5px #555;
+	background-color: #001f3f;
+	box-shadow: 3px 3px 5px #001f3f;
 	display: flex;
 	height: 50px;
 	list-style-type: none;
@@ -25,6 +48,7 @@ ul.menu {
 	padding: 0;
 	top: 0;
 	width: 100%;
+    z-index: 1;
 }
 ul.menu a {
 	color: #ddd;
@@ -125,7 +149,7 @@ footer > p {
     text-align: center;
 }
 section.corpo { /* requisito item m) - justificado, com margem e cor preta */
-    background-color: #f8f5f0;
+    background-color: #fffceb;
     border: 1px solid black;
     border-radius: .2em;
     box-shadow: 2px 2px 6px black;
@@ -136,6 +160,7 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
 }
 @media (min-width: 1280px) {
     section.corpo {
+        font-size: 120%;
         margin-left: auto;
         margin-right: auto;
         width: 968px; /* -250-30-30-2 (menu, margin, padding, border) */
@@ -145,6 +170,7 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
         margin-right: auto;
         width: 988px; /* -250-30-10-2 (menu, margin, padding, border) */
     }
+    button { font-size: 90%; }
 }
 header { padding: 15px; }
 header > a > img {
@@ -152,11 +178,12 @@ header > a > img {
     border-radius: .2em;
     box-shadow: 2px 2px 6px black;
     display: block;
-    margin: auto; /* requisito item o) */
+    margin: auto;
     max-width: calc(100% - 2px);
 }
 fieldset { min-width: 0; }
         /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
+/*
 textarea {
     box-shadow: 3px 2px 8px 1px;
     border-color: #666;
@@ -169,8 +196,9 @@ input {
     border-style: solid;
     border-color: #666;
 }
-
+*/
         /*CONFIGURAÇÃO DOS BOTÕES*/
+/*
 #botoes {
     display: inline-block;
     font-weight: 900;
@@ -201,13 +229,146 @@ button#enviar {
     font-weight: 700;
     padding: 5px 5px 5px 5px;
 }
+*/
 /*tabela contatos*/
 table {
+    border-collapse: collapse;
+    border-spacing: 0;
     margin: 15px auto;
+    max-width: calc(100% - 30px);
 }
-table, th, td {
-    border: 1px solid gray;
+th {
+    color: #fff;
+    background-color: #0074d9;
 }
+tr:nth-child(odd) { background: #fff; }
+tr:nth-child(even) { background-color: #ddd; }
+td,th { padding: 10px; }
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
 .item-m { font-weight: bold; }
+fieldset { border: none; }
+legend {
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    width: calc(100% - 4px);
+}
+label.left {
+    font-weight: bold;
+    float: left;
+    height: 20px;
+    margin: 5px 0;
+    padding-top: 4px;
+    text-align: right;
+    width: 90px;
+}
+input.right, div.right {
+    float: right;
+    height: 20px;
+    margin: 5px 0;
+    width: calc(100% - 110px);
+}
+textarea.right {
+    float: right;
+    height: 150px;
+    margin: 5px 0;
+    width: calc(100% - 116px);
+}
+button.right {
+    float: right;
+    margin: 5px 0 5px 10px;
+}
+input, textarea {
+    border: 1px solid #ddd;
+    border-radius: .2em;
+    background-color: #fff;
+}
+input:focus, textarea:focus {
+    border: 1px solid #0074d9;
+    outline: none;
+}
+.control {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+}
+.control input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.control div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.control-radio div {
+    border-radius: 50%;
+}
+.control:hover input ~ div {
+    background: #aaa;
+}
+.control input:checked ~ div {
+    background: #0074d9;
+    border: 1px solid #0074d9;
+}
+.control:hover input:not([disabled]):checked ~ div {
+    background: #001f3f;
+    border: 1px solid #001f3f;
+}
+.control input:disabled ~ div {
+    background: #eee;
+    border: 1px solid #ddd;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control div:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ div:after {
+    display: block;
+}
+.control-checkbox div:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ div:after {
+    border-color: #aaa;
+}
+.control-radio div:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+.control-radio input:disabled ~ div:after {
+    background: #aaa;
+}
+button[type="submit"] {
+    background: #0074d9;
+    border: 0px;
+    border-radius: .2em;
+    padding: 5px 10px;
+    color: #fff;
+}
+button[type="reset"] {
+    background: #ddd;
+    border: 0px;
+    border-radius: .2em;
+    padding: 5px 10px;
+}
+button[type="submit"]:hover { background: #001f3f; }
+button[type="reset"]:hover { background: #aaa; }
