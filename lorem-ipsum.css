@@ -231,15 +231,29 @@ button#enviar {
 */
 /*tabela contatos*/
 table {
+    border-collapse: collapse;
+    border-spacing: 0;
     margin: 15px auto;
+    max-width: calc(100% - 30px);
 }
-table, th, td {
-    border: 1px solid black;
+th {
+    color: #fff;
+    background-color: #0074d9;
 }
+tr:nth-child(odd) { background: #fff; }
+tr:nth-child(even) { background-color: #ddd; }
+td,th { padding: 10px; }
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
 .item-m { font-weight: bold; }
+fieldset { border: none; }
+legend {
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    width: calc(100% - 4px);
+}
 label.left {
+    font-weight: bold;
     float: left;
     height: 20px;
     margin: 5px 0;
@@ -264,7 +278,7 @@ button.right {
     margin: 5px;
 }
 input, textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: .2em;
 }
 input:focus, textarea:focus {
