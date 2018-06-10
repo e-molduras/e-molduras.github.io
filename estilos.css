@@ -222,5 +222,5 @@ table, th, td {
  /*CONFIGURAÇÃO imagens*/
 img {
     border: 2px solid black;
-
+    box-shadow: 3px 3px 5px #555;
 }
