@@ -29,36 +29,53 @@
     <section class="corpo">
         <!-- requisito item k) - item centralizado -->
         <h1 class="center">Pedido</h1>
-        <h1>Para concluir a sua compra preencha os campos abaixo</h1>
-        <form method="post" id="pedido" action="https://formspree.io/grupoemolduras@yahoo.com">
-            <fieldset id="usuario"><legend>Identificação do Comprador</legend>
-                <p><label for="idnome">Nome: </label><input type="text" name="nome" id="idnome" placeholder="Nome Completo"></p>
-                <p><label for="idfone">Fone: &nbsp;&nbsp;</label><input type="tel" name="fone" id="idfone" placeholder="DDD + número"></p>
-                <p><label for="idemail">E-mail:</label><input type="email" name="email" id="idemail" placeholder="E-mail aqui..." size="20"></p>
+        <p>Para concluir a sua compra preencha os campos abaixo.</p>
+        <form method="post" action="https://formspree.io/grupoemolduras@yahoo.com">
+            <fieldset id="usuario">
+                <legend>Identificação do comprador</legend>
+                <label for="idnome" class="left">Nome:</label>
+                <input type="text" name="nome" id="idnome" placeholder="Nome completo" class="right">
+                <label for="idfone" class="left">Fone:</label>
+                <input type="tel" name="fone" id="idfone" placeholder="Número de telefone" class="right">
+                <label for="idemail" class="left">E-mail:</label>
+                <input type="email" name="email" id="idemail" placeholder="Endereço de e-mail" class="right">
             </fieldset>
-            <fieldset id="endereco"><legend>Endereço</legend>
-                <p><label for="idendereco">Endereço:</label><input id="idendereco" name="endereco" placeholder="Endereço"></p>
-                <p><label for="idcidade">Cidade:&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="idcidade" name="cidade" placeholder="Cidade"></p>
-                <p><label for="idestado">Estado:&nbsp;&nbsp;&nbsp;&nbsp;</label><input id="idestado" name="estado" placeholder="Estado"></p>
-                <p><label for="idcep">CEP:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="idcep" name="cep" placeholder="CEP"></p>
+            <fieldset id="endereco">
+                <legend>Endereço</legend>
+                <label for="idendereco" class="left">Endereço:</label>
+                <input id="idendereco" name="endereco" placeholder="Endereço" class="right">
+                <label for="idcidade" class="left">Cidade:</label>
+                <input id="idcidade" name="cidade" placeholder="Cidade" class="right">
+                <label for="idestado" class="left">Estado:</label>
+                <input id="idestado" name="estado" placeholder="Estado" class="right">
+                <label for="idcep" class="left">CEP:</label>
+                <input id="idcep" name="cep" placeholder="CEP" class="right">
             </fieldset>
-            <fieldset id="detalhe"><legend>Detalhes do Pedido</legend>
-                <p><label name="tamanho">Tamanho:</label>
+            <fieldset id="detalhe">
+                <legend>Detalhes do pedido</legend>
+                <label for="idtamanho" class="left">Tamanho:</label>
+                <div class="select right">
                     <select name="tamanho">
-                        <option>Selecione</option>
                         <option>Pequeno</option>
                         <option>Médio</option>
                         <option>Grande</option>
-                    </select> <br/>
-                    <label for="idarquivo">Cole o link da sua foto aqui</label>  <input type="text" id="idarquivo" placeholder=" Link aqui..."></p>
+                    </select>
+                    <div></div>
+                </div>
+                <label for="idarquivo" class="left ">Foto(s):</label>
+                <input type="text" id="idarquivo" placeholder="Cole o link da sua foto/álbum aqui" class="right">
             </fieldset>
-            <h4>Mensagem</h4>
-            <textarea placeholder="Deixe aqui sua mensagem..."></textarea><br>
-            <div id="botoes">
-               <button id="comprar" type="submit">COMPRAR</button>
-               <button id="limpar" type="reset">LIMPAR</button>
-            </div>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea placeholder="Deixe aqui sua mensagem..." class="right"></textarea>
+                <div class="right">
+                    <button type="submit" class="right">Comprar</button>
+                    <button type="reset" class="right">Limpar</button>
+                </div>
+            </fieldset>
         </form>
+        <p>Você receberá um e-mail com os dados para pagamento e demais
+        detalhes da sua compra.</p>
     </section>
     <footer>
         <ul>
