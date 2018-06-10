@@ -241,9 +241,14 @@ th {
     color: #fff;
     background-color: #0074d9;
 }
-tr:nth-child(odd) { background: #fff; }
+tr:nth-child(odd) { background-color: #fff; }
 tr:nth-child(even) { background-color: #ddd; }
-td,th { padding: 10px; }
+tr.light { background-color: #fff; }
+tr.dark { background-color: #ddd; }
+td,th {
+    border: 1px solid #fffceb;
+    padding: 10px;
+}
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
 .item-m { font-weight: bold; }
