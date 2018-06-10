@@ -211,3 +211,8 @@ table, th, td {
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
 .item-m { font-weight: bold; }
+ /*CONFIGURAÇÃO imagens*/
+img {
+    border: 2px solid black;
+
+}
