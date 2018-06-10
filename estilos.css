@@ -313,7 +313,7 @@ button[type="reset"]:hover { background: #aaa; }
     text-align: center;
     width: 100%;
 }
-figure {
+.molduras figure {
     display: inline-block;
     margin: 5px;
     width: 275px;
@@ -324,4 +324,19 @@ figure {
     border-radius: .2em;
     transform: scale(1.25);
     transition: .3s;
+}
+.sobre {
+    text-align: center;
+    margin: auto;
+}
+.sobre figure {
+    background-color: #fff;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+}
+.sobre img {
+    border: 2px solid black;
+    max-width: 100%;
 }
