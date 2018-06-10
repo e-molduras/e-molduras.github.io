@@ -276,7 +276,7 @@ textarea.right {
 }
 button.right {
     float: right;
-    margin: 5px;
+    margin: 5px 0 5px 10px;
 }
 input, textarea {
     border: 1px solid #ddd;
