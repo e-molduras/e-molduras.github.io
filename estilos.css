@@ -204,6 +204,12 @@ button#enviar {
     padding: 5px 5px 5px 5px;
 }
 /*tabela contatos*/
+table {
+    margin: 15px auto;
+}
 table, th, td {
     border: 1px solid black;
 }
+.center { text-align: center; }
+.item-e { text-decoration: underline; }
+.item-m { font-weight: bold; }
