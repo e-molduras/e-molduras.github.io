@@ -1,0 +1,332 @@
+body {
+    background-attachment: fixed;
+	background-color: #f8f5f0;
+    background-image: url('imagens/background.png');
+	margin: 0;
+	padding: 60px 0 0;
+}
+@media (min-width: 900px) {
+	body {
+		padding: 0 0 0 250px;
+	}
+}
+ol.checklist { list-style-type: lower-alpha; }
+ol.checklist li:before { content: "\2610\0020"; color: red; }
+ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
+ul.menu {
+	align-items: center;
+	background-color: #555;
+	box-shadow: 3px 3px 5px #555;
+	display: flex;
+	height: 50px;
+	list-style-type: none;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+}
+ul.menu a {
+	color: #ddd;
+	text-decoration: none;
+}
+ul.menu a:hover { color: #2ecc40; }
+ul.menu > li { margin-left: 10px; }
+ul.menu > li > a > img:nth-child(2) { display: none; }
+ul.menu > li:nth-child(2) { display: none; }
+ul.menu > li:nth-child(3) { display: none; }
+ul.menu > li:nth-child(4) { margin-left: auto; }
+ul.menu > li:last-child { margin-right: 10px; }
+@media (min-width: 400px) {
+	ul.menu > li:nth-child(2) { display: block; }
+}
+@media (min-width: 900px) {
+	ul.menu {
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		width: 250px;
+	}
+	ul.menu > li > a > img:first-child { display: none; }
+	ul.menu > li > a > img:nth-child(2) {
+		border-radius: 50%;
+		display: block;
+	}
+	ul.menu > li {
+		font-size: larger;
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+	}
+	ul.menu > li:nth-child(3) {
+		display: block;
+		margin-bottom: 20px;
+		font-size: small;
+	}
+	ul.menu > li:nth-child(4) { margin-left: 0; }
+	@media (min-height: 500px) {
+		ul.menu > li:last-child { margin-bottom: 70px; }
+		ul.menu > li:nth-child(3) { margin-bottom: 40px; }
+	}
+}
+
+/*CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+h3 {
+    text-align: left;
+    content:">";
+}
+#titulo-painel {
+    text-align: center;
+    background: rgba(60,60,60,.5);
+    padding: 10px;
+}
+.painel_molduras {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #666;
+}
+.painel_molduras li {
+    display: inline-block;
+}
+.painel_molduras img:hover {
+    transform: scale(1.5);
+    transition: .7s;
+}
+.painel_molduras a {
+    text-decoration: none;
+}
+/*FIM DA CONFIGURAÇÃO DO PAINEL DE MOLDURAS*/
+
+footer {
+    background-color: #fff; /* requisito item n) */
+    border: 1px solid black;
+    border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
+    margin: 15px;
+    padding: 5px;
+}
+footer > ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+footer > ul > li { display: inline-block; }
+footer > h5 {
+    font-size: small;   /* requisito item n) */
+    font-weight: bold;  /* requisito item n) */
+    margin: 5px;
+    text-align: center; /* requisito item n) */
+}
+footer > p {
+    font-size: small;
+    margin: 5px;
+    text-align: center;
+}
+section.corpo { /* requisito item m) - justificado, com margem e cor preta */
+    background-color: #f8f5f0;
+    border: 1px solid black;
+    border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    text-align: justify;
+}
+@media (min-width: 1280px) {
+    section.corpo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 968px; /* -250-30-30-2 (menu, margin, padding, border) */
+    }
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 988px; /* -250-30-10-2 (menu, margin, padding, border) */
+    }
+}
+header {
+    display: flex;
+    justify-content: center; /* requisito item o) */
+    padding: 15px;
+}
+header > a > img {
+    border: 1px solid black; /* requisito item o) */
+    border-radius: .2em;
+    box-shadow: 2px 2px 6px black;
+    max-width: calc(100% - 2px);
+}
+fieldset { min-width: 0; }
+        /*CONFIGURAÇÃO DA PÁGINA DE COMPRA*/
+/*
+textarea {
+    box-shadow: 3px 2px 8px 1px;
+    border-color: #666;
+    height: 150px;
+    max-width: calc(100% - 10px);
+    width: 500px;
+    font-size: 12pt;
+}
+input {
+    border-style: solid;
+    border-color: #666;
+}
+*/
+        /*CONFIGURAÇÃO DOS BOTÕES*/
+/*
+#botoes {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 15px;
+}
+button#comprar {
+    margin-left: 200px;
+    margin-top: 30px;
+    border-radius: 40px;
+    height: 35px;
+    width: 100px;
+    border-color: #666;
+}
+button#limpar {
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 40px;
+    height: 35px;
+    width: 100px;
+    border-color: #666;
+}
+button#limpar2,
+button#enviar {
+    border-color: #000;
+    background: #7F7F7F;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 5px 5px 5px 5px;
+}
+*/
+/*tabela contatos*/
+table {
+    margin: 15px auto;
+}
+table, th, td {
+    border: 1px solid black;
+}
+.center { text-align: center; }
+.item-e { text-decoration: underline; }
+.item-m { font-weight: bold; }
+label.left {
+    float: left;
+    height: 20px;
+    margin: 5px 0;
+    padding-top: 4px;
+    text-align: right;
+    width: 90px;
+}
+input.right, div.right {
+    float: right;
+    height: 20px;
+    margin: 5px 0;
+    width: calc(100% - 110px);
+}
+textarea.right {
+    float: right;
+    height: 150px;
+    margin: 5px 0;
+    width: calc(100% - 116px);
+}
+button.right {
+    float: right;
+    margin: 5px;
+}
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: .2em;
+}
+input:focus, textarea:focus {
+    border: 1px solid #0074d9;
+    outline: none;
+}
+.control {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+}
+.control input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.control div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ddd;
+}
+.control-radio div {
+    border-radius: 50%;
+}
+.control:hover input ~ div,
+.control input:focus ~ div {
+    background: #aaa;
+}
+.control input:checked ~ div {
+    background: #0074d9;
+}
+.control:hover input:not([disabled]):checked ~ div {
+    background: #001f3f;
+}
+.control input:disabled ~ div {
+    background: #eee;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control div:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ div:after {
+    display: block;
+}
+.control-checkbox div:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ div:after {
+    border-color: #aaa;
+}
+.control-radio div:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+.control-radio input:disabled ~ div:after {
+    background: #aaa;
+}
+button[type="submit"] {
+    background: #0074d9;
+    border: 0px;
+    border-radius: .2em;
+    padding: 5px 10px;
+    color: #fff;
+}
+button[type="reset"] {
+    background: #ddd;
+    border: 0px;
+    border-radius: .2em;
+    padding: 5px 10px;
+}
+button[type="submit"]:hover { background: #001f3f; }
+button[type="reset"]:hover { background: #aaa; }
