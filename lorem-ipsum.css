@@ -48,6 +48,7 @@ ul.menu {
 	padding: 0;
 	top: 0;
 	width: 100%;
+    z-index: 1;
 }
 ul.menu a {
 	color: #ddd;
