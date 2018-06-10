@@ -31,10 +31,11 @@
         <!-- requisito item e) - item sublinhado (palavra contato) -->
         <p>Você pode entrar em <span class="item-e">contato</span> com nossa
         empresa através de um dos telefones abaixo:</p>
-        <table>
+        <table> <!-- requisito item d) - tabela -->
             <thead>
                 <tr>
                     <!-- requisito item k) - item centralizado -->
+                    <!-- requisito item d) - colspan -->
                     <th colspan="2" class="center">Contatos</th>
                 </tr>
                 <tr>
@@ -48,6 +49,7 @@
                     <td>(65) 91111-1111</td>
                 </tr>
                 <tr>
+                    <!-- requisito item d) - rowspan -->
                     <td rowspan="2">Erivelton</td>
                     <td>(65) 92222-2222</td>
                 </tr>
@@ -66,37 +68,53 @@
         <!-- requisito item e) - item sublinhado (palavra contato) -->
         <p>Se preferir entrar em <span class="item-e">contato</span> por
         e-mail, preencha os campos abaixo e envie-nos sua mensagem:</p>
-        <form method="post" id="contato" action="https://formspree.io/grupoemolduras@yahoo.com">
+        <!-- requisito item f) - formulário com método post -->
+        <form method="post" action="https://formspree.io/grupoemolduras@yahoo.com">
             <input type="hidden" name="_language" value="pt-BR">
             <input type="hidden" name="_subject" value="Contato: E-Molduras">
-            <fieldset id="usuario"><legend>Identificação do cliente</legend>
-                <p><label for="idnome">Nome: </label><input type="text" name="nome" id="idnome" placeholder="Nome Completo"></p>
-                <p><label for="idfone">Fone: &nbsp;&nbsp;</label><input type="tel" name="fone" id="idfone" placeholder="Fone aqui..."></p>
-                <p><label for="idemail">E-mail:</label><input type="email" name="email" id="idemail" placeholder="E-mail aqui..." size="20"></p>
-                <p><label name="sexo">Sexo:</label>
-                  <select name="sexo">
-                        <option>masculino</option>
-                        <option>Femenino</option>
-                        <option>Prefiro não informar</option>
-                    </select> <br/>
-                    <p><label name="cliente">Cliente:</label><br>
-                         <label for="nãocliente">Não </label>
-                          <input type="radio" name="gender" id="cliente" value="male"><br>
-                          <label for="cliente">Sim</label>
-                          <input type="radio" name="gender" id="cliente" value="cliente"><br>
-                         <P>Selecione horário de entrega:<BR>
-                             <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
-                            <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 18h<BR>
-
+            <fieldset>
+                <legend>Identificação do cliente</legend>
+                <label for="idnome" class="left">Nome:</label>
+                <!-- requisito item f) - input text -->
+                <input type="text" name="nome" id="idnome" placeholder="Nome completo" class="right">
+                <label for="idfone" class="left">Fone:</label>
+                <input type="tel" name="fone" id="idfone" placeholder="Número de telefone" class="right">
+                <label for="idemail" class="left">E-mail:</label>
+                <input type="email" name="email" id="idemail" placeholder="Endereço de e-mail" class="right">
+                <div class="right center">
+                    <label class="control control-radio">Masculino
+                        <!-- requisito item f) - radio -->
+                        <input type="radio" name="genero">
+                        <div></div>
+                    </label>
+                    <label class="control control-radio">Feminino
+                        <input type="radio" name="genero">
+                        <div></div>
+                    </label>
+                    <label class="control control-radio">Prefiro não informar
+                        <input type="radio" name="genero" checked>
+                        <div></div>
+                    </label>
+                    <label class="control control-checkbox">Já sou cliente
+                        <!-- requisito item f) - checkbox -->
+                        <input type="checkbox" name="cliente">
+                        <div></div>
+                    </label>
+                </div>
             </fieldset>
-            <fieldset><legend>Mensagem</legend>
-                <textarea name="mensagem" placeholder="Deixe aqui sua mensagem..."></textarea>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <!-- requisito item f) - textarea -->
+                <textarea name="mensagem" placeholder="Deixe aqui sua mensagem..." class="right"></textarea>
+                <div class="right">
+                    <!-- requisito item f) - submit -->
+                    <button type="submit" class="right">Enviar</button>
+                    <!-- requisito item f) - resest -->
+                    <button type="reset" class="right">Limpar</button>
+                </div>
             </fieldset>
-          <div class="botao_contato">
-            <button id="enviar" type="submit" >Enviar</button>
-           <button id="limpar2" type="reset">Limpar</button>
-          </div>
-
+        </form>
+    </section>
     <footer>
         <ul>
             <li>[ <a href="https://www.facebook.com/E-Molduras-134330300770298" target="_blank">Facebook</a> |</li>
