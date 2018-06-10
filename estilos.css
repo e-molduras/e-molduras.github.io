@@ -216,8 +216,7 @@ table {
 table, th, td {
     border: 1px solid gray;
 }
-tr:nth-child(odd) { background: #fff; }
-tr:nth-child(even) { background-color: #ddd; }
+
 td,th, { padding: 10px; }
 .center { text-align: center; }
 .item-e { text-decoration: underline; }
