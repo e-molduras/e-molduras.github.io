@@ -267,7 +267,12 @@ label.left {
     text-align: right;
     width: 90px;
 }
-input.right, div.right {
+div.right {
+    float: right;
+    margin: 5px 0;
+    width: calc(100% - 110px);
+}
+input.right {
     float: right;
     height: 20px;
     margin: 5px 0;
@@ -295,7 +300,8 @@ input:focus, textarea:focus {
 .control {
     display: inline-block;
     position: relative;
-    padding-left: 30px;
+    padding: 0 10px 0 30px;
+    margin-bottom: 15px;
 }
 .control input {
     opacity: 0;
