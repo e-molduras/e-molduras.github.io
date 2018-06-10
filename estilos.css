@@ -134,6 +134,18 @@ section.corpo { /* requisito item m) - justificado, com margem e cor preta */
     padding: 15px;
     text-align: justify;
 }
+@media (min-width: 1280px) {
+    section.corpo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 968px; /* -250-30-30-2 (menu, margin, padding, border) */
+    }
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 988px; /* -250-30-10-2 (menu, margin, padding, border) */
+    }
+}
 header {
     display: flex;
     justify-content: center; /* requisito item o) */
