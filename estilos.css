@@ -8,7 +8,11 @@ body {
 @media (min-width: 900px) {
 	body {
 		padding: 0 0 0 250px;
-	}
+}
+    p {
+        text-align: justify;
+        color: #000;
+    }
 }
 ol.checklist { list-style-type: lower-alpha; }
 ol.checklist li:before { content: "\2610\0020"; color: red; }
