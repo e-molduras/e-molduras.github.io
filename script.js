@@ -15,7 +15,12 @@ window.onload = function () {
     if (i) {
         view = document.getElementById("moldura-view");
         bar = document.getElementById("moldura-info");
-        view.firstElementChild.src = "imagens/moldura" + i + ".jpg";
+        var img = document.createElement("img");
+        img.setAttribute("src", "imagens/moldura" + i + ".jpg");
+        img.setAttribute("alt", "Moldura selecionada");
+        img.setAttribute("width", "275");
+        img.setAttribute("height", "183");
+        view.appendChild(img);
         var p = bar.firstElementChild;
         bar.style.backgroundColor = "#2ECC40";
         document.getElementById("modelo").value = i;
