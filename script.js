@@ -21,12 +21,12 @@ window.onload = function () {
         img.setAttribute("width", "275");
         img.setAttribute("height", "183");
         view.appendChild(img);
-        bar.firstElementChild.innerHTML = moldura[i];;
+        bar.firstElementChild.innerHTML = moldura[i];
         bar.style.backgroundColor = "#2ECC40";
         document.getElementById("modelo").value = i;
         bar.onmousedown = function () {
             view.style.visibility = view.style.visibility == "hidden" ? "visible" : "hidden";
-        }
+        };
         bar.onmouseover = function () {
             view.style.visibility = "visible";
         };
