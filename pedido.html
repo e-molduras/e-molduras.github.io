@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8"> <!-- requisito item j) -->
 	<title>pedido.html</title> <!-- requisito item i) -->
+	<script src="script.js"></script>
 	<link href="estilos.css" rel="stylesheet"> <!-- requisito item g) -->
 	<link href="favicon.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<body>
+<body class="pedido">
 	<nav>
 		<ul class="menu"> <!-- requisito item h) -->
 			<li>
@@ -26,11 +27,20 @@
     <header> <!-- requisito item o) -->
         <a href="principal.html"><img alt="Banner" src="imagens/banner.png"></a>
     </header>
+    <section id="moldura-info">
+        <p>Nenhuma moldura selecionada!</p>
+    </section>
+    <section id="moldura-view">
+        <img src="" alt="Moldura selecionada" width="275" height="183">
+    </section>
     <section class="corpo">
         <!-- requisito item k) - item centralizado -->
         <h1 class="center">Pedido</h1>
         <p>Para concluir a sua compra preencha os campos abaixo.</p>
         <form method="post" action="https://formspree.io/grupoemolduras@yahoo.com">
+            <input type="hidden" name="modelo" id="modelo" value="0">
+            <input type="hidden" name="_language" value="pt-BR">
+            <input type="hidden" name="_subject" value="Pedido: E-Molduras">
             <fieldset id="usuario">
                 <legend>Identificação do comprador</legend>
                 <label for="idnome" class="left">Nome:</label>

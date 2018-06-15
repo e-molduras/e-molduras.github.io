@@ -39,7 +39,7 @@ ol.checklist li.checked:before { content: "\2611\0020"; color: green; }
 ul.menu {
 	align-items: center;
 	background-color: #001f3f;
-	box-shadow: 3px 3px 5px #001f3f;
+	box-shadow: 3px 3px 5px black;
 	display: flex;
 	height: 50px;
 	list-style-type: none;
@@ -387,4 +387,47 @@ button[type="reset"]:hover { background: #aaa; }
 .sobre img {
     border: 2px solid black; /* requisito item c) - figuras com contorno */
     max-width: 100%;
+}
+#moldura-info {
+    background-color: #e7040f;
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    height: 28px;
+    position: fixed;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+}
+#moldura-info p {
+    color: #fff;
+    font-weight: bold;
+    margin: 5px;
+}
+#moldura-view {
+    position: fixed;
+    text-align: center;
+    top: 78px;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+}
+#moldura-view img {
+    background-color: #fffceb;
+    border: 1px solid black;
+    border-radius: .2em;
+    padding: 10px;
+    transition: all .3s;
+}
+body.pedido { padding-top: 78px; }
+@media (min-width: 900px) {
+    body.pedido { padding-top: 28px; }
+    #moldura-info {
+        top: 0;
+        width: calc(100% - 250px);
+    }
+    #moldura-view {
+        top: 28px;
+        width: calc(100% - 250px);
+    }
 }
