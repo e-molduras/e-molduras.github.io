@@ -213,6 +213,11 @@ button.right {
     float: right;
     margin: 5px 0 5px 10px;
 }
+@media (min-width: 1280px) {
+    label.left { width: 140px; }
+    div.right, input.right { width: calc(100% - 160px); }
+    textarea.right { width: calc(100% - 166px); }
+}
 input, textarea {
     border: 1px solid #ddd;
     border-radius: .2em;
