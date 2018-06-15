@@ -416,6 +416,7 @@ button[type="reset"]:hover { background: #aaa; }
     background-color: #fffceb;
     border: 1px solid black;
     border-radius: .2em;
+    box-shadow: 3px 3px 5px black;
     padding: 10px;
     transition: all .3s;
 }
