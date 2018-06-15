@@ -264,7 +264,7 @@ input:focus, textarea:focus {
 .control input:disabled ~ div {
     background: #eee;
     border: 1px solid #ddd;
-    opacity: 0.6;
+    opacity: .6;
     pointer-events: none;
 }
 .control div:after {
@@ -325,7 +325,7 @@ input:focus, textarea:focus {
   background: #aaa;
 }
 .select select:disabled {
-  opacity: 0.5;
+  opacity: .5;
   pointer-events: none;
 }
 .select div {
@@ -336,8 +336,8 @@ input:focus, textarea:focus {
   height: 0;
   pointer-events: none;
   border-style: solid;
-  border-width: 8px 5px 0 5px;
-  border-color: #001f3f transparent transparent transparent;
+  border-width: 8px 5px 0;
+  border-color: #001f3f transparent transparent;
 }
 .select select:hover ~ div,
 .select select:focus ~ div {
@@ -348,14 +348,14 @@ input:focus, textarea:focus {
 }
 button[type="submit"] {
     background: #0074d9;
-    border: 0px;
+    border: 0;
     border-radius: .2em;
     padding: 5px 10px;
     color: #fff;
 }
 button[type="reset"] {
     background: #ddd;
-    border: 0px;
+    border: 0;
     border-radius: .2em;
     padding: 5px 10px;
 }
@@ -423,7 +423,7 @@ button[type="reset"]:hover { background: #aaa; }
     border-radius: .2em;
     box-shadow: 3px 3px 5px black;
     padding: 10px;
-    transition: all .3s;
+    transition: .3s;
 }
 body.pedido { padding-top: 78px; }
 @media (min-width: 900px) {
