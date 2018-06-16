@@ -238,7 +238,7 @@ input:focus, textarea:focus {
     position: absolute;
     z-index: -1;
 }
-.control div {
+.control span {
     position: absolute;
     top: 0;
     left: 0;
@@ -247,35 +247,35 @@ input:focus, textarea:focus {
     background: #fff;
     border: 1px solid #ddd;
 }
-.control-radio div {
+.control-radio span {
     border-radius: 50%;
 }
-.control:hover input ~ div {
+.control:hover input ~ span {
     background: #aaa;
 }
-.control input:checked ~ div {
+.control input:checked ~ span {
     background: #0074d9;
     border: 1px solid #0074d9;
 }
-.control:hover input:not([disabled]):checked ~ div {
+.control:hover input:not([disabled]):checked ~ span {
     background: #001f3f;
     border: 1px solid #001f3f;
 }
-.control input:disabled ~ div {
+.control input:disabled ~ span {
     background: #eee;
     border: 1px solid #ddd;
     opacity: .6;
     pointer-events: none;
 }
-.control div:after {
+.control span:after {
     content: '';
     position: absolute;
     display: none;
 }
-.control input:checked ~ div:after {
+.control input:checked ~ span:after {
     display: block;
 }
-.control-checkbox div:after {
+.control-checkbox span:after {
     left: 8px;
     top: 4px;
     width: 3px;
@@ -284,10 +284,10 @@ input:focus, textarea:focus {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-.control-checkbox input:disabled ~ div:after {
+.control-checkbox input:disabled ~ span:after {
     border-color: #aaa;
 }
-.control-radio div:after {
+.control-radio span:after {
     left: 7px;
     top: 7px;
     height: 6px;
@@ -295,7 +295,7 @@ input:focus, textarea:focus {
     border-radius: 50%;
     background: #fff;
 }
-.control-radio input:disabled ~ div:after {
+.control-radio input:disabled ~ span:after {
     background: #aaa;
 }
 .select {
